@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'weather_page.dart';
+import 'chatbot_page.dart';
 import 'contacts_page.dart';
 
 class HomePage extends StatelessWidget {
@@ -40,10 +41,12 @@ class HomePage extends StatelessWidget {
               },
               leading: const Icon(Icons.cloud),
             ),
-            const ListTile(
-              title: Text('ChatBot', style: TextStyle(fontSize: 20)),
-              // onTap: () {},
-              leading: Icon(Icons.chat),
+            ListTile(
+              title: const Text('ChatBot', style: TextStyle(fontSize: 20)),
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const ChatBotPage()));
+              },
+              leading: const Icon(Icons.chat),
             ),
             const ListTile(
               title: Text('Mask Detection', style: TextStyle(fontSize: 20)),
