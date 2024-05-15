@@ -64,9 +64,9 @@ This Flutter application combines multiple features into one, including a weathe
 ![img3.png](assets/img3.png)
 
 - adding contacts :
-- 
+
 ![img4.png](assets/img4.png)
 
 - deleting contacts :
-- 
+
 ![img5.png](assets/img5.png)      ![img6.png](assets/img6.png)
