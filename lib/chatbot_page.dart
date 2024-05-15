@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 class ChatBotPage extends StatefulWidget {
-  const ChatBotPage({super.key});
+  const ChatBotPage({Key? key}) : super(key: key);
 
   @override
   State<ChatBotPage> createState() => _ChatBotPageState();
@@ -67,9 +67,13 @@ class _ChatBotPageState extends State<ChatBotPage> {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         if (message['sender'] == 'bot') const Icon(Icons.android, color: Colors.green),
-                        Text(
-                          message['message'],
-                          style: const TextStyle(color: Colors.black),
+                        Flexible(
+                          child: Text(
+                            message['message'],
+                            style: const TextStyle(color: Colors.black),
+                            maxLines: null,
+                            overflow: TextOverflow.visible,
+                          ),
                         ),
                         if (message['sender'] == 'user') const Icon(Icons.person, color: Colors.blue),
                       ],
