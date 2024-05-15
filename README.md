@@ -48,19 +48,25 @@ This Flutter application combines multiple features into one, including a weathe
 ## Screenshots
 
 **- Home Page :**
+
 ![img.png](assets/img.png)
 
 **- Weather Page :**
+
 ![img1.png](assets/img1.png)
 
 **- ChatBot Page :**
+
 ![img2.png](assets/img2.png)
 
 **- Contacts Page :**
+
 ![img3.png](assets/img3.png)
 
 - adding contacts :
+- 
 ![img4.png](assets/img4.png)
 
 - deleting contacts :
+- 
 ![img5.png](assets/img5.png)      ![img6.png](assets/img6.png)
